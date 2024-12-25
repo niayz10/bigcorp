@@ -28,6 +28,7 @@ urlpatterns = [
     path('payment/', include('payment.urls', namespace='payment')),
     path('recommend/', include('recommend.urls'), name='recommend'),
     path('email/', include(email_urls), name='email-verification'),
+    path('api/v1/', include('api.urls'), name='api'),
     path('', views.index, name='index'),
 ]
 
